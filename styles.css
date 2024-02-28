@@ -1,0 +1,62 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f4f8; /* Light background color */
+}
+
+.todo-container {
+    text-align: center;
+    border: 2px solid #007bff; /* Blue border */
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    background-color: #ffffff; /* White background for the container */
+}
+
+#todo-heading {
+    color: #007bff; /* Blue color for heading */
+    border-bottom: 2px solid #007bff; /* Blue border for heading */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#todo-input, #add-todo, #clear-todos {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #007bff; /* Blue border for inputs and buttons */
+    outline: none;
+}
+
+#todo-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.todo-item {
+    background: #e9ecef; /* Light grey background for todo items */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.edit-btn, .delete-btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+.delete-btn:hover, .edit-btn:hover {
+    color: red;
+}
